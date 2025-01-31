@@ -8,9 +8,9 @@ A small JavaScript project to **practice Cursor’s AI** features.
 
 You’ll fix broken tests using:  
 
-1. **Inline Edit**
-2. **Chat With Codebase**
-3. **Composer**
+1. **Inline Edit** (⌘ + K)
+2. **Chat With Codebase** (⌘ + L)
+3. **Composer** (⌘ + I)
 
 ## 1. Prerequisites
 
