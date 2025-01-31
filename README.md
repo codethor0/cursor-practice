@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/625fff2abe443df4ebc4e672/626002a1e6eb58119b978753_The%20Agile%20Monkeys%20Logo-01.svg" alt="Cursor Practice Logo" width="200" height="auto">
+</p>
+
 # Cursor Practice
 
 A small JavaScript project to **practice Cursor’s AI** features.  
@@ -10,7 +14,24 @@ You’ll fix broken tests using:
 
 ## 1. Prerequisites
 
-- **Node.js** and **npm**. Download from [nodejs.org](https://nodejs.org) if you don’t have them.
+- **Node.js** and **npm**:
+
+  ### macOS
+
+  1. Using Homebrew (recommended):
+
+     ```bash
+     brew install node
+     ```
+
+  2. Or download the macOS installer (.pkg) from [nodejs.org](https://nodejs.org)
+  3. Verify installation in Terminal:
+
+     ```bash
+     node --version
+     npm --version
+     ```
+
 - A code editor with **Cursor** installed (the AI-integrated IDE).
 
 ## 2. Project Setup
@@ -32,9 +53,7 @@ npm test
 - File: [./src/shippingCalculator.js](./src/shippingCalculator.js)
 - Test: [./test/shippingCalculator.test.js](./test/shippingCalculator.test.js)
 
-Scenario: The code returns 10 for any input, but the test expects a formula:
-
-> Base cost = 5 + (2 * weight)
+Scenario: The code returns 10 for any input, but the test expects dynamic calculation.
 
 ### 2. Chat With Codebase (Messy Function)
 
@@ -55,8 +74,11 @@ Scenario: The test imports a function named multiply, but the code still calls i
 
 ## 5. Final Tips
 
-- You can combine inline edits and chat instructions in any file.
-- If you break something else, run `npm test` to see which test fails.
+- Use **Inline Edit** + **Chat** together: Combine AI features for better results
+- Add context by including multiple files in your prompts
+- When stuck, include the entire codebase in your prompt for better AI understanding
+- Run `npm test` frequently to catch any unintended side effects
+- Review AI suggestions carefully before applying them
 - Don’t forget to commit your changes to track progress.
 
 Happy coding with Cursor!
