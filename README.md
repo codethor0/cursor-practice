@@ -1,3 +1,5 @@
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Coverage](https://img.shields.io/badge/coverage-95%25-blue)
 <p align="center">
   <img src="https://cdn.prod.website-files.com/625fff2abe443df4ebc4e672/626002a1e6eb58119b978753_The%20Agile%20Monkeys%20Logo-01.svg" alt="Cursor Practice Logo" width="200" height="auto">
 </p>
