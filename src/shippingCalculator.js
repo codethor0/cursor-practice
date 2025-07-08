@@ -1,12 +1,8 @@
-/**
- * A function that *incorrectly* calculates shipping.
- * The test expects a specific formula, but we are returning a hard-coded value.
- * Use Cursor's Inline Edit to fix it, so the test will pass.
- */
 function calculateShipping(weight, region) {
-    // Currently always returns 10, which is WRONG
-    return 10;
+  if (region === 'US') {
+    return 5 + (2 * weight); // ✅ 5 + (2 * 2) = 9
   }
-  
-  module.exports = calculateShipping;
-  
+  return 10 + (3 * weight);
+}
+
+module.exports = calculateShipping;

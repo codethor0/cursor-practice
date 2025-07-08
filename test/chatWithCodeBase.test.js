@@ -13,8 +13,28 @@ test('processUserData returns sorted user info', () => {
   const results = processUserData(users);
 
   expect(results).toHaveLength(3);
-  // The order should be: 'Alice Williams', 'Jane Smith', 'John Doe'
   expect(results[0].fullName).toBe('Alice Williams');
   expect(results[1].fullName).toBe('Jane Smith');
   expect(results[2].fullName).toBe('John Doe');
+});
+
+test('processUserData returns user objects with expected fields', () => {
+  const users = [
+    { firstName: 'John', lastName: 'Doe', age: 25, isActive: true, points: 1200 },
+    { firstName: 'Jane', lastName: 'Smith', age: 20, isActive: false, points: 500 },
+    { firstName: 'Alice', lastName: 'Williams', age: 30, isActive: true, points: 10000 },
+  ];
+  const results = processUserData(users);
+
+  results.forEach((user) => {
+    expect(user).toMatchObject({
+      fullName: expect.any(String),
+      age: expect.any(Number),
+      isActive: expect.any(Boolean),
+      points: expect.any(Number),
+      canDrink: expect.any(Boolean),
+      status: expect.any(String),
+      userType: expect.any(String),
+    });
+  });
 });
